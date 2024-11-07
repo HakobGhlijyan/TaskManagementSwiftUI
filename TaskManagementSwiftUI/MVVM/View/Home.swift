@@ -152,6 +152,7 @@ struct Home: View {
                     
                     Text(task.taskDate.formatted(date: .omitted, time: .shortened))
                 }
+                
                 //2
                 if viewModel.isCurrentHour(date: task.taskDate) {
                     //MARK: - Team Members

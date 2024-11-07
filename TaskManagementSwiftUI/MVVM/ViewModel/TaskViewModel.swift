@@ -10,21 +10,22 @@ import SwiftUI
 final class TaskViewModel: ObservableObject {
     // Simple Task
     @Published var storedTask: [TaskCalendar] = [
-        // now
+        // now -86400 1 day . 3600 1 hour
+        // .init(timeIntervalSinceNow: (-86400 + 3600))
         TaskCalendar(
             taskTitle: "Meeting",
             taskDescription: "Discuss team task for the day",
-            taskDate: Date.now
+            taskDate: .init(timeIntervalSinceNow: (3 * 3600))
         ),
         TaskCalendar(
             taskTitle: "Iconset",
             taskDescription: "Edit icons for team task for next week",
-            taskDate: Date.now
+            taskDate: .init(timeIntervalSinceNow: (2 * 3600))
         ),
         TaskCalendar(
             taskTitle: "Prototype",
             taskDescription: "Make and send prototype",
-            taskDate: Date.now
+            taskDate: .init(timeIntervalSinceNow: 3600)
         ),
         TaskCalendar(
             taskTitle: "Check asset",
@@ -34,22 +35,40 @@ final class TaskViewModel: ObservableObject {
         TaskCalendar(
             taskTitle: "Team party",
             taskDescription: "Make fun with team mates",
-            taskDate: Date.now
+            taskDate: .init(timeIntervalSinceNow: -3600)
         ),
+        // -1 day
         TaskCalendar(
             taskTitle: "Client Meeting",
             taskDescription: "Explain project to clinet",
-            taskDate: Date.now
+            taskDate: .init(timeIntervalSinceNow: -(86400 + (3 * 3600)))
         ),
         TaskCalendar(
             taskTitle: "Next Project",
             taskDescription: "Discuss next project with team",
-            taskDate: Date.now
+            taskDate: .init(timeIntervalSinceNow: -(86400 + (2 * 3600)))
         ),
         TaskCalendar(
             taskTitle: "App Proposal",
             taskDescription: "Meet client for next App Proposal",
-            taskDate: Date.now
+            taskDate: .init(timeIntervalSinceNow: -(86400 + 3600))
+        ),
+        
+        // +1 day
+        TaskCalendar(
+            taskTitle: "Client Next Meeting",
+            taskDescription: "Explain project to clinet",
+            taskDate: .init(timeIntervalSinceNow: +(86400 + (3 * 3600)))
+        ),
+        TaskCalendar(
+            taskTitle: "Next Proposal Project",
+            taskDescription: "Discuss next project with team",
+            taskDate: .init(timeIntervalSinceNow: +(86400 + (2 * 3600)))
+        ),
+        TaskCalendar(
+            taskTitle: "AppClient Proposal",
+            taskDescription: "Meet client for next App Proposal",
+            taskDate: .init(timeIntervalSinceNow: +(86400 + 3600))
         ),
     ]
     
