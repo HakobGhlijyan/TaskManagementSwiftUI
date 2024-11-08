@@ -18,5 +18,5 @@
 
 ### Work in...
 <div id="stat0" align="center">
-  <img src="https://github.com/HakobGhlijyan/TaskManagementSwiftUI/blob/Part02FixAndAdd/Screen/v1.mp4" width="1000"/> 
+  <img src="https://github.com/HakobGhlijyan/TaskManagementSwiftUI/blob/Part02FixAndAdd/Screen/v1.gif" width="1000"/> 
 </div>
