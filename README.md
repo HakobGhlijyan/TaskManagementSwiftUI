@@ -4,8 +4,8 @@
 ### UI
 <div id="stat0" align="center">
   <img src="https://github.com/HakobGhlijyan/TaskManagementSwiftUI/blob/main/Screen/n1.png" width="400"/>
-  <img src="https://github.com/HakobGhlijyan/TaskManagementSwiftUI/blob/main/n2.png" width="400"/>
-  <img src="https://github.com/HakobGhlijyan/TaskManagementSwiftUI/blob/main/v2.gif" width="400"/>  
+  <img src="https://github.com/HakobGhlijyan/TaskManagementSwiftUI/blob/main/Screen/n1.png" width="400"/>
+  <img src="https://github.com/HakobGhlijyan/TaskManagementSwiftUI/blob/main/Screen/n1.png" width="400"/>
 </div>
 
 ### App Code
